@@ -1,0 +1,21 @@
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+<script>
+    function load() {
+        Swal.fire({
+            position: 'center',
+            icon: 'error',
+            title: '오류.',
+            text : '관리자에게 문의해주세요',
+            footer: 'SangHo Security Redirection',
+            showConfirmButton: true,
+        }).then((result) => {
+            location.replace("https://naver.com")
+
+        })
+
+    }
+</script>
+
+<body onload="load()">
+
+</body>
